@@ -6,19 +6,19 @@
 .header{
     width: 100%;
     height: 100px;
-    background-color: rgba(160, 240, 236, 0.205);
+    background-color: rgba(158, 240, 236, 0.205);
     padding: 4px;
     box-sizing: border-box;
     text-align: center;
     border-bottom-left-radius: 40%;
     border-bottom-right-radius: 40%;
-    position: fixed;
     border-bottom: 2px solid black;
     /*border-top: 2px solid black;*/
     box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5)
 }
 
 .header .logo{
+    margin-left :10px;
     width: 80px;
     height: 80px;
     position: relative;
@@ -30,13 +30,14 @@
 }
 
 .header .tambah{
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border: 1px solid black;
-    margin-right: 5px;
-    border-radius: 50%;
-    line-height: 50px;
+    margin-right: 30px;
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    top: -8px;
+    left: 9px;
+    background-image: url("../img/tambah.png");
+    background-size: contain;
     float: right;
 }
 
@@ -49,6 +50,7 @@
     border-radius: 50%;
     line-height: 50px;
     float: right;
+
 }
 
 .cl::after{
@@ -59,5 +61,5 @@
 
 body{
     height: 1000px;
-    background-color: antiquewhite;
+    background-color: rgb(160, 247, 179);
 }
