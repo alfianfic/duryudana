@@ -61,10 +61,11 @@ a{
 }
 
 .container .login{
-    position: absolute;
-    top: 400px;
-    left: 470px;
+    position: relative;
+    margin-top: 120px;
+    margin-left: -320px;
     padding: 10px;
+    box-sizing: border-box;
     background-color: rgba(0, 46, 253, 0.479);
     border: none;
     border-radius: 10%;
@@ -80,9 +81,8 @@ a{
 }
 
 .container .daftar{
-    position: absolute;
-    top: 400px;
-    left: 540px;
+    position: relative;
+    margin-left: 10px;
     padding: 10px;
     background-color: rgb(255, 0, 0);
     border: none;
