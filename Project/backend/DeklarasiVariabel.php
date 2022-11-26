@@ -1,16 +1,22 @@
 <?php
     $konek=mysqli_connect("localhost","root","","duryudana");
     
-    function insertData(){
+    function showData(){
         global $konek;
-        $semuadata=mysqli_query($konek,"SELECT * FROM member");
+        $semuadata=mysqli_query($konek,"SELECT username,nama,ketertarikan FROM member");
         $barisan = [];
         while ($perdata=mysqli_fetch_assoc($semuadata)){
             $barisan[]=$perdata;
         }
         return $barisan;};
-
-    function showData(){};
+        
+    function shWithKey($username){
+        global $konek;
+        $primaryKey = mysqli_query($konek,"SELECT * FROM member where username='$username'");
+        $mengacuKey=mysqli_fetch_assoc($primaryKey);
+        return $mengacuKey;};
+            
+    function insertData(){};
 
     function updateData(){};
 

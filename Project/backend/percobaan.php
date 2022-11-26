@@ -23,7 +23,7 @@
             // $data=mysqli_fetch_assoc($semuadata);
             // var_dump($data);
             $a=1;
-            $datanih=insertdata();
+            $datanih=showData();
             // while ($data=mysqli_fetch_assoc($semuadata)):
             foreach ($datanih as $data):
         ?>
@@ -35,6 +35,15 @@
             $a++;
             // endwhile;
             endforeach;
+        ?>
+        <?php 
+            echo "<h4>test key</h4>";
+            // $primaryKey = mysqli_query($konek,"SELECT * FROM member where username='member1'");
+            // echo($primaryKey); 
+            // $mengacuKey=mysqli_fetch_assoc($primaryKey);
+            $mengacuKey=shWithKey('member1');
+            echo "Nama = ",$mengacuKey['nama'],", ";
+            echo "Ketertarikan = ",$mengacuKey['ketertarikan'];
         ?>
     </div>
     <div class="container">
