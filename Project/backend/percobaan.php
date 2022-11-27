@@ -47,6 +47,55 @@
         ?>
     </div>
     <div class="container">
+        <h1>Daftar</h1>
+        <?php 
+            if (isset($_POST["daftar"])){
+            $ok=insertData();
+            var_dump($ok);
+            keberhasilan($ok);};
+            // var_dump(isset($_POST["daftar"]));
+            // if (isset($_POST["daftar"])){
+            // var_dump($_POST["username"]);}
+            // echo($_POST["username"]);
+            // echo($_POST["nama"]);
+            // echo($_POST["password"]);
+            // echo($_POST["ketertarikan"]);
+            // $i1=($_POST["username"]);
+            // $i2=($_POST["nama"]);
+            // $i3=($_POST["password"]);
+            // $i4=($_POST["ketertarikan"]);
+            // mysqli_query($konek,"INSERT INTO member VALUES('$i1','$i2','$i3','$i4')");
+        ?>
+        <form action="" method="post">
+            <div class="username">
+                <input type="text" name="username" id="username" required>
+                <label for="username">USERNAME</label>
+            </div>
+            <br>
+            <br>
+            <div class="username">
+                <input type="text" name="ketertarikan" id="ketertarikan" required>
+                <label for="name">KETERTARIKAN</label>
+            </div>
+            <br>
+            <br>
+            <div class="username">
+                <input type="text" name="nama" id="nama" required>
+                <label for="nama">NAMA</label>
+            </div>
+            <br>
+            <br>
+            <div class="username">
+                <input type="password" name="password" id="password" required>
+                <label for="password">PASSWORD</label>
+                <!-- <span><a href="#">Lupa password?</a></a><span> -->
+            </div>
+            <br>
+            <button type="submit" class="login" name="daftar"><a href="percobaan.php">Daftar</a></button>
+            <button type="submit" class="daftar"><a href="#">Daftar</a></button>
+        </form>
+    </div>
+    <div class="container">
         <h1>LogIn</h1>
         <form action="">
             <div class="username">
@@ -61,7 +110,7 @@
                 <span><a href="#">Lupa password?</a></a><span>
             </div>
             <br>
-            <button type="submit" class="login"><a href="index.html">LogIn</a></button>
+            <button type="submit" class="login" name="login"><a href="index.html">LogIn</a></button>
             <button type="submit" class="daftar"><a href="#">Daftar</a></button>
         </form>
     </div>
