@@ -14,6 +14,7 @@
         $primaryKey = mysqli_query($konek,"SELECT * FROM member where username='$username'");
         $mengacuKey=mysqli_fetch_assoc($primaryKey);
         return $mengacuKey;};
+
     //2 Create        
     function insertData(){
         if (isset($_POST["username"])){
@@ -36,7 +37,7 @@
         // echo"<script>alert('Registrasi Berhasil');
         // documen.location.href='percobaan.php';</script>";
     };
-    function keberhasilan($k){
+    function keberhasilan($k){//lanjutan registrasi
         if($k>0){
             echo"<script>alert('Registrasi Berhasil');
             documen.location.href='percobaan.php';</script>";
@@ -45,11 +46,16 @@
             documen.location.href='percobaan.php';</script>";
         }
     };
-        
+
+    //3 Update        
     function updateData(){};
 
+    //4 Delete        
     function deleteData(){};
     
+    //5 Login
+    function loginAkun(){};        
+
 ?>
 <!-- mysqli_fetch_ ada 4
     row()       return array numeric, 

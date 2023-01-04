@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+    <?php session_start();
+        if(!isset($_SESSION["username"])){ header("location: LoginNSession.php");}
+    ?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +14,7 @@
 <body>
     <div class="header cl">
         <div class="logo"><div class="foto"></div></div>
-        <div class="keluar">Exit</div>
+        <a href="logout.php"><div class="keluar">Exit</div></a>
         <div class="tambah"><div class="foto"></div></div>
     </div>
     <div class="container">
@@ -92,7 +95,7 @@
             </div>
             <br>
             <button type="submit" class="login" name="daftar"><a href="percobaan.php">Daftar</a></button>
-            <button type="submit" class="daftar"><a href="#">Daftar</a></button>
+            <!-- <button type="submit" class="daftar"><a href="#">Daftar</a></button> -->
         </form>
     </div>
     <div class="container">
