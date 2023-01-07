@@ -1,7 +1,7 @@
 <h1>LogIn</h1>
 <?php 
     session_start();
-    echo($_SESSION["username"]);
+    // echo($_SESSION["username"]);
     if(isset($_SESSION["username"])){ header("location: percobaan.php");}
     $konek=mysqli_connect("localhost","root","","duryudana");
     if(isset($_POST["login"])){

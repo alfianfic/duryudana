@@ -102,7 +102,11 @@
         <h1>LogIn</h1>
         <form action="">
             <div class="username">
-                <input type="text" name="username" id="username" required>
+                <?php
+                $sds=shWithKey($_SESSION["username"]); 
+                echo$sds["nama"];?><br>
+            <a href="https://daftarbeasiswa.com/beasiswa-anak-bangsa-untuk-pelajar-dan-mahasiswa/">Link1</a></div>
+                <!-- <input type="text" name="username" id="username" required>
                 <label for="username">USERNAME</label>
             </div>
             <br>
@@ -114,7 +118,7 @@
             </div>
             <br>
             <button type="submit" class="login" name="login"><a href="index.html">LogIn</a></button>
-            <button type="submit" class="daftar"><a href="#">Daftar</a></button>
+            <button type="submit" class="daftar"><a href="#">Daftar</a></button> -->
         </form>
     </div>
 </body>
