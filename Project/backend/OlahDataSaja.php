@@ -3,12 +3,11 @@
     if (isset($_GET["hal"])) {
         # code...
         $halrn=$_GET["hal"];
-        $mulai=($halrn-1)*2;
     }
     else{
         $halrn=1;
-        $mulai=($halrn-1)*2;
     }
+    $mulai=($halrn-1)*2;
     $t=mysqli_num_rows(mysqli_query($konek,"SELECT * FROM member"));
     $t=ceil($t/2);
     
