@@ -9,6 +9,8 @@
     background-image: url("../img/polos.jpeg");
     background-color: rgb(37, 150, 190);
     padding: 4px;
+    position: fixed;
+    z-index: 99;
     box-sizing: border-box;
     text-align: center;
     border-bottom-left-radius: 40%;
@@ -53,6 +55,16 @@
     background-size: contain;
     float: right;
 
+}
+.beranda{
+    width: 250px;
+    height:1000px;
+    position: absolute;
+    z-index: 10;
+    background-color: lightgray;
+    left: 0px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .cl::after{
